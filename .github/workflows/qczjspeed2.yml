@@ -9,6 +9,8 @@ on:
      - cron: '3 16 * * *'
   watch:
     types: started
+  push:
+    branches: [ main2 ]
 
 jobs:
   build:
