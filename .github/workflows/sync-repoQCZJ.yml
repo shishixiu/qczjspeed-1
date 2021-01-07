@@ -1,4 +1,4 @@
-name: sync-qczjspeed
+name: sync-qczjspeed-main2
 on:
   schedule:
     - cron: '1 */3 * * *'
