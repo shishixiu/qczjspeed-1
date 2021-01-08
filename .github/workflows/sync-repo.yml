@@ -1,3 +1,4 @@
+# File: .github/workflows/sync-qczjspeed-main2
 name: sync-qczjspeed-main2
 on:
   schedule:
@@ -8,7 +9,7 @@ on:
   push:
     branches: [ main2 ]
   repository_dispatch:
-    types: sync-qczjspeed
+    types: sync-qczjspeed-main2
 jobs:
   repo-sync:
     env:
@@ -20,8 +21,9 @@ jobs:
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
+          ref: main2
 
-      - name: sync qczjspeed
+      - name: sync qczjspeed-main2
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
