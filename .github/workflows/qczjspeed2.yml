@@ -51,7 +51,7 @@ jobs:
           cd ~/qczjspeed
           node Task/qczjspeed.js
         env:
-          
+          DEFAULT_BRANCH: main
           PUSH_KEY: ${{ secrets.PUSH_KEY }}
           BARK_PUSH: ${{ secrets.BARK_PUSH }}
           TG_BOT_TOKEN: ${{ secrets.TG_BOT_TOKEN }}
